@@ -63,8 +63,16 @@ console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name
 function findFriends(friends: Friend[], filter: (f: Friend) => boolean) : string[] {
     return friends.filter(filter).map((f) => f.name);
 }
-
 //[ 'Paul Fleming' ]
 //[ 'Paul Fleming', 'Jane Costello' ]
 //console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
 //console.log(findFriends(friends, (friend) => friend.age < 35));
+
+function addInterest(f: Friend, interest: string) : string[] {
+    if (f.interests === undefined) {
+      f.interests = [];
+    }
+    f.interests.push(interest);
+    return f.interests;
+}
+console.log(addInterest(friends[1], 'Politics'))
