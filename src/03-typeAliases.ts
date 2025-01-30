@@ -78,7 +78,7 @@ function makeBuddyList(
     }
     return friends;
     }
-    // Type guard function to check if a buddy is a Friend
+
     function isFriend(buddy: Buddy): buddy is Friend {
       return (buddy as Friend).phone !== undefined;
     }
