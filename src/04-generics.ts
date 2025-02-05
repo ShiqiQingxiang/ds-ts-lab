@@ -14,7 +14,7 @@ function sort<T>(data: T[], compare: (a: T, b: T) => number): T[] {
 }
 
 // Sort friends by age
-console.log(sort<Friend>(friends, (a, b) => a.age - b.age));
+//console.log(sort<Friend>(friends, (a, b) => a.age - b.age));
 
 // Sort colleagues by extension number
 console.log(
